@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 15</title>
+  <style>
+    body{
+      background-image: url(./background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .outer{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin-left: 500px;
+      margin-right: 500px;
+      padding: 3rem;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      width: 30%;
+    }
+    hr{
+      width: 100%;
+    }
+    .form{
+      margin-bottom: 15px;
+    }
+    h1{
+      text-align: center;
+    }
+    input{
+      width: 100%;
+      background-color: rgb(229 229 229);
+      border-radius: 15px;
+      border: 1px solid rgb(229 229 229);
+      height: 30px;
+    }
+    label{
+      font-weight: bold;
+    }
+    button{
+      background-color: black;
+      color: white;
+      width: min-content;
+      align-self: center;
+      height: 35px;
+      width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer">
+    <h1>Sign Up</h1>
+    <hr>
+    <br>
+    <div class="form">
+      <label for="html">First Name</label><br>
+      <input type="textbox" value="Enter your name">
+    </div>
+    <div class="form">
+      <label for="html">Last Name</label><br>
+      <input type="textbox" value="Enter your last name">      
+    </div>
+    <div class="form">
+      <label for="html">Date of birth</label><br>
+      <input type="date" value="dd/mm/yyyy">
+    </div>
+    <div class="form">
+      <label for="html">E-mail</label><br>
+      <input type="textbox" value="Enter your E-mail">
+    </div>
+    <div class="form">
+      <label for="html">Password</label><br>
+      <input type="textbox" value="Enter password">
+    </div>
+    <div class="form">
+      <label for="html">Confirm Password</label><br>
+      <input type="textbox" value="Repeat password">
+    </div>
+    <hr>
+    <button>Register</button>
+  </div>
+</body>
+</html>

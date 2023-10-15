@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 13</title>
+  <style>
+    .row1,.row2{
+      display: flex;
+      flex-direction: row;  
+      height: 80px;
+      width: 100px;
+      border: 3px solid gray
+
+    }
+    .top,.bottom{
+      display: flex;
+      margin-top: 30px; 
+      justify-content: space-between;
+    }
+    .middle1,.middle2{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+    }
+    .container{
+      width: 35%;
+    }
+  </style>
+</head>
+<body>
+  <p>Arrange boxes(formed by create a div) in like a frame</p>
+  <div class="container">
+    <div class="top">
+      <div class="row1"></div>
+      <div class="row1"></div>
+      <div class="row1"></div>
+      <div class="row1"></div>
+    </div>
+    <div class="middle1">
+      <div class="row2"></div>
+      <div class="row2"></div>
+    </div>
+    <div class="middle2">
+      <div class="row2"></div>
+      <div class="row2"></div>
+    </div>
+    <div class="bottom">
+      <div class="row1"></div>
+      <div class="row1"></div>
+      <div class="row1"></div>
+      <div class="row1"></div>
+    </div>
+  </div>
+</body>
+</html>
