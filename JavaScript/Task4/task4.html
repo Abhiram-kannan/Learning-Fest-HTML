@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .container{
+      border: 3px solid gray;
+      border-radius: 3%;
+      background-color: aliceblue;
+      width: 35%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form{
+      align-items:center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <form onsubmit="return validate()" action="sample.html">
+      <h1 style="text-align: center;">Enter The Credentials</h1>
+        <label>Enter Username:</label><br>
+        <input type="text" id="uname" placeholder="Enter Username" required>
+        <br>
+        <label for="password">Enter Password:</label><br>
+        <input type="password" id="passwd" placeholder="Enter Password" required><br>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validate(){
+      var username = document.getElementById("uname");
+      var password = document.getElementById("passwd");
+      
+      if(username.value.trim() == '' || password.value.trim() == '' ){
+        alert("Cannot leave it empty");
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .container{
+      border: 1px solid;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    input{
+      margin-top: 20px;
+    }
+    button{
+      margin-top: 30px;
+    }
+    h1{
+      text-decoration:underline;
+    }
+    #result{
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">  
+    <h1>Calculate the sum</h1>
+    <input type="number" id="num1" placeholder="Enter num 1">
+    <input type="number" placeholder="Enter num 2" id="num2">
+    <br>
+    <button onclick="calcsum()" class="btn btn-secondary">Calculate sum</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function calcsum(){
+      var num1=parseFloat(document.getElementById("num1").value);
+      var num2=parseFloat(document.getElementById("num2").value);
+      var sum = num1 + num2;
+      document.getElementById("result").innerHTML= "Sum: "+ sum;
+    }
+  </script>
+</body>
+</html>
